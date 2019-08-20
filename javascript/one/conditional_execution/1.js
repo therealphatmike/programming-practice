@@ -1,42 +1,37 @@
 /*
     Exercise 1 of conditional execution:
     
-    Write a program that only prints the users names that start with 'A'
-    The users array is provided for you.
-    Use the getFirstLetter() method to get the first letter of each name.
-    Place your code inside the for loop.
+    Write the code that only prints the users names that start with 'A'.
 
-    To test your code run it with the command node 1.js
+    We have a skeleton of helpers provided below. Don't let the code worry you.
+    This is just some set up needed to accept user input from the command line
+    using JavaScript. Place your logic where it says YOUR CODE HERE.
 
-    Your code should output:
-    Alice
-    Anders
-    Anna
-    Alexandra
+    We ask the user for their name and we only want to greet them if their name
+    starts with an 'A'. So, if the user inputs "Michael" we will not take any
+    action. If the user inputs 'Alice', we will print "Hello, Alice!" to the
+    command line.
 */
 
-// the list of users. Don't worry too much about this syntax
-var users = [
-    'Alice',
-    'Ian',
-    'Bjorn',
-    'Anders',
-    'Larry',
-    'Ralf',
-    'alina',
-    'Hanna',
-    'Anna',
-    'Michael',
-    'Jon',
-    'Alexandra',
-];
+var readline = require('readline');
 
-// this allows us to iterate over the list of users. Place your code *inside* this block
-for (var i = 0; i < users.length; i++) {
-    // YOUR CODE HERE
-}
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-// getFirstLetter() returns the first letter of the persons name
-function getFirstLetter(name) {
-    return name[0];
+rl.question("What is your name? ", function(input) {
+  //YOUR CODE HERE
+
+
+  // DO NOT DELETE this is important for the code to exit properly.
+  rl.close();
+});
+
+/*
+    this is a helper function. if you pass in the users input it will return the
+    first letter
+*/
+function getFirstLetter(input) {
+    return input[0];
 }
