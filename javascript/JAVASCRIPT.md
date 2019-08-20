@@ -1,0 +1,2 @@
+# JAVASCRIPT
+JavaScript has quickly become one of the most important programming languages in the world. This is because it was built to run in the browser. Our increasing dependence on the web to handle our application and data needs has led JavaScript to the forefront of most professional programmers minds. It has become so ubiquitous a language, that there are even frameworks to allow one to use JS in embedded systems.
