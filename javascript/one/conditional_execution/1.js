@@ -22,6 +22,13 @@ var rl = readline.createInterface({
 
 rl.question("What is your name? ", function(input) {
   //YOUR CODE HERE
+  for(var i = 0; i < input.length; i++) {
+    if(input[0] === "A") {
+      console.log(input);
+    }else {
+      console.log("We don't want your kind around here");
+    }
+  }
 
 
   // DO NOT DELETE this is important for the code to exit properly.
