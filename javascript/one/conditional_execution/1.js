@@ -11,6 +11,12 @@
     starts with an 'A'. So, if the user inputs "Michael" we will not take any
     action. If the user inputs 'Alice', we will print "Hello, Alice!" to the
     command line.
+
+    The very bottom method is a method called getFirstLetter and it takes an
+    string argument and returns the first letter. You can use it like so:
+
+    var name = "alice";
+    console.log(getFirstLetter(name)); // this will write "a" to the console
 */
 
 var readline = require('readline');
